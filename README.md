@@ -1,15 +1,15 @@
-# 🤖 Multi-Agent RAG System for Intelligent Query Routing
+#  Multi-Agent RAG System for Intelligent Query Routing
 
-## 📌 Overview
+##  Overview
 
 Este proyecto implementa un sistema de **multi-agent orchestration** basado en LLMs que clasifica automáticamente consultas de usuarios y las enruta a agentes especializados que responden utilizando **Retrieval-Augmented Generation (RAG)**.
 
 El sistema está diseñado para resolver un problema real de negocio:
-👉 **tickets mal enroutados entre áreas (HR, IT, Finance)**
+**tickets mal enroutados entre áreas (HR, IT, Finance)**
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 * Clasificar automáticamente consultas de usuarios
 * Enrutar dinámicamente a agentes especializados
@@ -19,7 +19,7 @@ El sistema está diseñado para resolver un problema real de negocio:
 
 ---
 
-## 🧠 Arquitectura del sistema
+## Arquitectura del sistema
 
 ```
 Usuario → Orchestrator → Routing → RAG Agent → Respuesta
@@ -31,16 +31,16 @@ Usuario → Orchestrator → Routing → RAG Agent → Respuesta
 
 ---
 
-## ⚙️ Componentes principales
+## Componentes principales
 
-### 1. 🧭 Orchestrator (Routing Inteligente)
+### 1. Orchestrator (Routing Inteligente)
 
 * Clasifica la intención de la consulta (`hr`, `tech`, `finance`)
 * Implementado con LLM + prompt engineering
 
 ---
 
-### 2. 🤖 RAG Agents (Especializados)
+### 2. RAG Agents (Especializados)
 
 | Agente        | Dominio          | Función                |
 | ------------- | ---------------- | ---------------------- |
@@ -56,7 +56,7 @@ Cada agente:
 
 ---
 
-### 3. 📚 Vector Store + Retrieval
+### 3. Vector Store + Retrieval
 
 * Embeddings con OpenAI
 * Vector DB: FAISS
@@ -64,7 +64,7 @@ Cada agente:
 
 ---
 
-### 4. 🔍 Observabilidad (Langfuse)
+### 4. Observabilidad (Langfuse)
 
 * Tracking completo de:
 
@@ -75,7 +75,7 @@ Cada agente:
 
 ---
 
-### 5. 📊 Evaluator (Calidad automática)
+### 5. Evaluator (Calidad automática)
 
 * Evalúa respuestas del 1 al 10
 * Métricas:
@@ -86,7 +86,7 @@ Cada agente:
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Estructura del proyecto
 
 ```
 multi-agent-routing/
@@ -119,7 +119,7 @@ multi-agent-routing/
 
 ---
 
-## 🚀 Instalación
+##  Instalación
 
 ```bash
 git clone <repo-url>
@@ -133,7 +133,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Variables de entorno
+##  Variables de entorno
 
 Crear archivo `.env`:
 
@@ -147,7 +147,7 @@ LANGFUSE_HOST=https://cloud.langfuse.com
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
 ```bash
 python src/main.py
@@ -155,7 +155,7 @@ python src/main.py
 
 ---
 
-## 🧪 Ejemplo de uso
+##  Ejemplo de uso
 
 ```
 QUERY: ¿Cuántos días de vacaciones tengo?
@@ -170,7 +170,7 @@ QUERY: ¿Dónde veo mis facturas?
 
 ---
 
-## 📈 Observabilidad
+## Observabilidad
 
 El sistema utiliza **Langfuse** para:
 
@@ -180,31 +180,31 @@ El sistema utiliza **Langfuse** para:
 
 ---
 
-## 🧠 Decisiones técnicas
+##  Decisiones técnicas
 
-### ✔ Uso de LangChain
+###  Uso de LangChain
 
 * Framework estándar en la industria
 * Componentes reutilizables y escalables
 
-### ✔ RAG por dominio
+###  RAG por dominio
 
 * Reduce ruido semántico
 * Mejora precisión de respuestas
 
-### ✔ Routing con LLM
+###  Routing con LLM
 
 * Flexibilidad ante lenguaje natural
 * Escalable a nuevos dominios
 
-### ✔ Arquitectura modular
+###  Arquitectura modular
 
 * Separación clara de responsabilidades
 * Facilita mantenimiento y extensión
 
 ---
 
-## 🔥 Mejoras futuras
+##  Mejoras futuras
 
 * Confidence score en routing
 * Multi-label classification
@@ -214,7 +214,7 @@ El sistema utiliza **Langfuse** para:
 
 ---
 
-## 📊 Evaluación del sistema
+## Evaluación del sistema
 
 El sistema incluye un evaluator automático que asigna un score (1–10) a cada respuesta.
 
@@ -226,7 +226,7 @@ Esto permite:
 
 ---
 
-## 🏁 Conclusión
+##  Conclusión
 
 Este proyecto demuestra la implementación de un sistema real de IA aplicado a:
 
