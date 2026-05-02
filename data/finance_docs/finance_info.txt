@@ -1,0 +1,3 @@
+Las facturas se generan mensualmente.
+Podés acceder a ellas desde el portal de clientes.
+Los pagos se realizan mediante transferencia bancaria o tarjeta.

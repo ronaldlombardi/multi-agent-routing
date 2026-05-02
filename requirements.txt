@@ -1,0 +1,9 @@
+langchain
+langchain-openai
+openai
+langfuse
+faiss-cpu
+tiktoken
+python-dotenv
+jupyter
+ipykernel
